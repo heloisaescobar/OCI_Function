@@ -101,7 +101,7 @@ Policy Builder:
 > Allow dynamic-group <SEU_DYNAMIC_GROUP> to manage objects in compartment <SEU_COMPARTIMENTO> where target.bucket.name='<NOME_BUCKET>'
 
 * Para criar e pegar a informação do Dynamic Group, seguir [<SEU_DYNAMIC_GROUP>](https://github.com/heloisaescobar/OCI_Function/blob/main/Pre_Requisitos.md#cria%C3%A7%C3%A3o-dynamic-group)
-* Para criar e pegar a informação do Nome Bucket, seguir [<NOME_BUCKET>](a)
+* Para criar e pegar a informação do Nome Bucket, seguir [<NOME_BUCKET>](https://github.com/heloisaescobar/OCI_Function/blob/main/Cria%C3%A7%C3%A3o%20Bucket%20-%20Object%20Storage.md)
 
 #### Criação Dynamic Group
 
