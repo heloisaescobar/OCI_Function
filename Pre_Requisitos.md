@@ -104,3 +104,34 @@ Policy Builder:
 * Para criar e pegar a informação do Nome Bucket, seguir [<NOME_BUCKET>](a)
 
 #### Criação Dynamic Group
+
+Para criarmos nosso Dynamic Group, seguir os passos abaixo:
+
+Acessar o menu de hamburguer -> Identity & Security -> Dynamic Groups
+![image](https://user-images.githubusercontent.com/46925501/163208658-4d6d8878-4b7f-4220-8d1a-44c1bf06b522.png)
+
+Acessar o tópico <i>Dynamic Groups</i> e clicar em <i>Create Dynamic Group</i>
+![image](https://user-images.githubusercontent.com/46925501/163209058-71a0a33c-5084-4dd7-a9b5-bc8d93f4a54d.png)
+
+Preencher formulário conforme imagem abaixo e clicar em <i>Create</i>
+![image](https://user-images.githubusercontent.com/46925501/163211406-3b101e97-f481-4b69-807e-6a23bc5f443f.png)
+
+Informações Dynamica Group:
+Name: A escolha (Importante ser de fácil identificação - Exemplo: DynGroup_Team)
+Descrição: Dynamic Group Team
+Rule:
+> All {resource.type = 'fnfunc', resource.compartment.id ='<COLETAR_OCID_DO_SEU_COMPARTMENTO>'}
+
+Para pegar a informação do OCID do seu compartmento, seguir <COLETAR_OCID_DO_SEU_COMPARTMENTO>
+
+### Coletando OCID do seu Compartmento
+
+Acessar o menu de hamburguer -> Identity & Security -> Compartments
+![image](https://user-images.githubusercontent.com/46925501/163212632-547b1971-a873-4d2a-8250-0c1194ad3954.png)
+
+Acessar o tópico Compartments e você irá ver a lista de compartimentos criados em seu ambiente. Identifique o seu compartmento.
+Na coluna OCID, você identifica o ID do seu compartimento, copie e armazene para utilizar quando necessário.
+![image](https://user-images.githubusercontent.com/46925501/163212921-04db9c6e-a8c1-4086-bef8-1f3202b87f9c.png)
+
+
+
