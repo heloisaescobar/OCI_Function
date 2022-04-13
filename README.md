@@ -4,5 +4,6 @@ O Oracle Cloud Functions é um serviço serveles baseado no projeto de código a
 
 ## Tópicos Abordados
 * [Pré Requisitos](https://github.com/heloisaescobar/OCI_Function/blob/main/Pre_Requisitos.md)
+* [Criação Bucket - Object Storage]()
 
 
