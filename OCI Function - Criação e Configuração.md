@@ -57,7 +57,7 @@ Por hora vamos parar no passo 9 e seguir com o próximos passos desse material.
 
 #### Preparação do Script
 
-Agora vamos preparar a aplicação que vamos executar no nosso function. Para isso fazer download do arquivo
+Agora vamos preparar a aplicação que vamos executar no nosso function. Para isso fazer download do arquivo [func.py](https://github.com/heloisaescobar/OCI_Function/blob/main/func.py)
 
 #### Invocação do Script
 
