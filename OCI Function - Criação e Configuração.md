@@ -49,16 +49,47 @@ Execute o comando apresentado na tela do passo 5, ele irá solicitar um password
 Para o passo 8 vamos fazer algumas alterações, primeiro não vamos criar uma aplicação java e sim <b>Python</b> e também, vamos criar uma aplicação com o nome que desejar =]
 > fn init --runtime python fn_get_app_coffee
 
-- <b>Passo 9 - Switch into the generated directory</b>
-Nesse passo, vamos entrar no diretório gerado pelo comando anterior:
-> cd fn_get_app_coffee
-
-Por hora vamos parar no passo 9 e seguir com o próximos passos desse material.
+Por hora vamos parar no passo 8 e seguir com o próximos passos desse material.
 
 #### Preparação do Script
 
 Agora vamos preparar a aplicação que vamos executar no nosso function. Para isso fazer download do arquivo [func.py](https://github.com/heloisaescobar/OCI_Function/blob/main/func.py)
 
+Feito o download do passo anterior, vamos abrir o arquivo em nosso editor de preferência e vamos fazer uma alteração na linha <b>27</b>.
+
+Se lembram do passo [Criação Bucket - Object Storage](https://github.com/heloisaescobar/OCI_Function/blob/main/Cria%C3%A7%C3%A3o%20Bucket%20-%20Object%20Storage.md), então vamos pegar o nome desse bucket criado e adicionar na linha 27!
+
+Salvem o arquivo!
+
+Agora que alteramos essa linha, vamos voltar para o Cloud Shell (Telinha Preta!), e fazer o upload do arquivo que acabamos de editar.
+
+Para isso clicar no menu de hamburguer do Cloud Shell e depois <i>Upload</i>
+![image](https://user-images.githubusercontent.com/46925501/163274907-f4e6e697-7ce5-45be-9ea7-792bc0ee7fba.png)
+
+Selecione o arquivo e depois <i>Upload</i>
+![image](https://user-images.githubusercontent.com/46925501/163275051-0448ebfb-c491-4716-b7b0-14b90169282d.png)
+
+Agora se vocês executarem o comando ls do Linux, vamos visualizar um arquivo e um diretório, como a imagem a seguir
+![image](https://user-images.githubusercontent.com/46925501/163275189-2ab82837-e7f4-47f9-81a8-014813853530.png)
+
+Será necessário enviarmos o arquivo que fizemos upload para o diretório da nossa aplicação. Para isso executar o comando abaixo
+> mv func.py fn_get_app_coffee/
+
+Se caso perguntar se você deseja sobrescrever um arquivo existente, pode confirmar.
+
+Agora que criamos o arquivo da nossa aplicação, vamos fazer o deploy dela, para isso voltamos ao <i>Cloud Shell Setup</i>, e vamos executar apenas o passo <b>9</b> e passo <b>10</b>
+
 #### Invocação do Script
 
+Após finalizarmos os passos anteriores, vamos invocar nossa aplicação, para isso executamos o Passo 11 do <i>Cloud Shell Setup</i>
+> fn invoke get_api_app <i>NOME_DO_SEU_FUNCTION</i>
+
+Finalizando com sucesso, vamos obter um resultado parecido com a imagem a seguir
+![image](https://user-images.githubusercontent.com/46925501/163276975-ae57bf55-3c41-4c88-a574-6ce142c2b003.png)
+
 #### Visualizar Resultados
+
+Após finalizarmos com sucesso, podemos consultar nosso Bucket no object Storage para verificar se nosso arquivo foi criado com sucesso.
+![image](https://user-images.githubusercontent.com/46925501/163277510-d33efcd5-bb8d-4d28-8b65-37ef1f61bada.png)
+
+
