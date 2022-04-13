@@ -1,10 +1,10 @@
 ### Pré Requisitos
 
 Aqui vamos abordar toda a estrutura necessária para que possamos criar nossa aplicação function. Os tópicos abordados nessa sessão são:
-* [Criação de Compartimento](a)
-* [Criação VCN - Virtual Cloud Networks](a)
-* [Aplicação de Políticas](a)
-* [Criação Dynamic Group](a)
+* [Criação Compartimento](https://github.com/heloisaescobar/OCI_Function/blob/main/Pre_Requisitos.md#cria%C3%A7%C3%A3o-compartimento)
+* [Criação VCN - Virtual Cloud Networks](https://github.com/heloisaescobar/OCI_Function/blob/main/Pre_Requisitos.md#cria%C3%A7%C3%A3o-vcn---virtual-cloud-network)
+* [Aplicação de Políticas](https://github.com/heloisaescobar/OCI_Function/blob/main/Pre_Requisitos.md#aplica%C3%A7%C3%A3o-de-pol%C3%ADticas)
+* [Criação Dynamic Group](https://github.com/heloisaescobar/OCI_Function/blob/main/Pre_Requisitos.md#cria%C3%A7%C3%A3o-dynamic-group)
 
 
 #### Criação Compartimento
