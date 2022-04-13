@@ -22,6 +22,22 @@ Preencher formulário conforme imagem abaixo e clicar em <i>Create Compartment</
 
 #### Criação VCN - Virtual Cloud Network
 
+Para criarmos nossa VCN - Virtual Cloud Networkd, seguir os passos abaixo:
+
+Acessar o menu te hamburguer -> Network -> Virtual Cloud Networks
+![image](https://user-images.githubusercontent.com/46925501/163201821-e895723b-1f73-4684-8ad7-226a097ab91c.png)
+
+Acessar o tópico <i>Virtual Cloud Networks</i> e clicar em <i>Start VCN Wizard</i>
+![image](https://user-images.githubusercontent.com/46925501/163202204-d3aed35e-26e2-4abb-80da-19b1117a3b1e.png)
+
+Confirme se a opção <i>Create VCN with Internet Connectivity</i> está selecionada e clique em <i>Start VCN Wizard</i>
+![image](https://user-images.githubusercontent.com/46925501/163202455-f2c317d7-3403-4f89-856f-9eda11e5d443.png)
+
+Preencher formulário conforme imagem abaixo e clicar em </i>Create VCN</i>
+![image](https://user-images.githubusercontent.com/46925501/163202801-2c976a85-95a5-4e1b-9c0a-8a59c43dd02c.png)
+![image](https://user-images.githubusercontent.com/46925501/163202945-5ec86ccb-be47-4405-9488-be27f529b405.png)
+
+** Caso você já possua uma VCN criada, necessário alterar para outro CIDR (Exemplo:10.1.0.0/16 ou 10.2.0.0/16 entre outros)
 
 #### Aplicação de Políticas
 
