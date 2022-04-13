@@ -65,11 +65,29 @@ Name: Policies_faas
 Description: Policies de acesso e gerenciamento para criação do function
 Compartment: Necessário que seja no compartmento root
 Policy Builder:
+> Allow group <SEU_GRUPO> to use cloud-shell in tenancy
+> Allow group <SEU_GRUPO> to manage repos in tenancy
+> Allow group <SEU_GRUPO> to read objectstorage-namespaces in tenancy
+> Allow group <SEU_GRUPO> to manage logging-family in compartment <SEU_COMPARTIMENTO>
+> Allow group <SEU_GRUPO> to read metrics in compartment <SEU_COMPARTIMENTO>
+> Allow group <SEU_GRUPO> to manage functions-family in compartment <SEU_COMPARTIMENTO>
+> Allow group <SEU_GRUPO> to use virtual-network-family in compartment <SEU_COMPARTIMENTO>
+> Allow group <SEU_GRUPO> to use apm-domains in compartment <SEU_COMPARTIMENTO>
+> Allow group <SEU_GRUPO> to read vaults in compartment <SEU_COMPARTIMENTO>
+> Allow group <SEU_GRUPO> to use keys in compartment <SEU_COMPARTIMENTO>
+> Allow service faas to use apm-domains in compartment <SEU_COMPARTIMENTO>
+> Allow service faas to read repos in tenancy where request.operation='ListContainerImageSignatures'
+> Allow service faas to {KEY_READ} in compartment Team_Oracle where request.operation='GetKeyVersion'
+> Allow service faas to {KEY_VERIFY} in compartment Team_Oracle where request.operation='Verify'
 
 3ª function_bucket_policy
-Name: 
-Descriotion:
-Compartment:
+Name: function_bucket_policy
+Description: Policies para que o function consiga gerenciar o bucket descrito.
+Compartment: <SEU_COMPARTIMENTO>
 Policy Builder:
+> Allow dynamic-group <SEU_DYNAMIC_GROUP> to manage objects in compartment <SEU_COMPARTIMENTO> where target.bucket.name='<NOME_BUCKET>'
+
+* Para criar e pegar a informação do Dynamic Group, seguir [<SEU_DYNAMIC_GROUP>](https://github.com/heloisaescobar/OCI_Function/blob/main/Pre_Requisitos.md#cria%C3%A7%C3%A3o-dynamic-group)
+* Para criar e pegar a informação do Nome Bucket, seguir [<NOME_BUCKET>](a)
 
 #### Criação Dynamic Group
