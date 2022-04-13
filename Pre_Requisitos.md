@@ -24,7 +24,7 @@ Preencher formulário conforme imagem abaixo e clicar em <i>Create Compartment</
 
 Para criarmos nossa VCN - Virtual Cloud Networkd, seguir os passos abaixo:
 
-Acessar o menu te hamburguer -> Network -> Virtual Cloud Networks
+Acessar o menu de hamburguer -> Network -> Virtual Cloud Networks
 ![image](https://user-images.githubusercontent.com/46925501/163201821-e895723b-1f73-4684-8ad7-226a097ab91c.png)
 
 Acessar o tópico <i>Virtual Cloud Networks</i> e clicar em <i>Start VCN Wizard</i>
@@ -40,5 +40,36 @@ Preencher formulário conforme imagem abaixo e clicar em </i>Create VCN</i>
 ** Caso você já possua uma VCN criada, necessário alterar para outro CIDR (Exemplo:10.1.0.0/16 ou 10.2.0.0/16 entre outros)
 
 #### Aplicação de Políticas
+
+Para aplicarmos nossa políticas de acesso, seguir os passos abaixo:
+
+Acessar o menu de hamburguer -> Identity & Security -> Policies
+![image](https://user-images.githubusercontent.com/46925501/163203841-6f4e892f-70aa-4503-a885-2da182f2f9ad.png)
+
+Acessar o tópico <i>Policies</i> e Clicar em <i>Create Policy</i>
+![image](https://user-images.githubusercontent.com/46925501/163204345-7480f3d1-8af5-48a7-8fa7-efb37f7eaa90.png)
+
+Vamos criar três grupos de policies, seguindo o formulário a seguir:
+
+![image](https://user-images.githubusercontent.com/46925501/163205677-ce2b65a1-c5de-4890-8716-413bf10bd9d3.png)
+
+1ª Policy: object_storage_policy
+Name: object_storage_policy
+Description: Policies de acessos e gerenciamento do object storage
+Compartment: Necessário que seja no compartmento root
+Policy Builder: 
+> Allow service objectstorage-sa-saopaulo-1 to manage object-family in tenancy
+
+2ª Policies_faas
+Name: Policies_faas
+Description: Policies de acesso e gerenciamento para criação do function
+Compartment: Necessário que seja no compartmento root
+Policy Builder:
+
+3ª function_bucket_policy
+Name: 
+Descriotion:
+Compartment:
+Policy Builder:
 
 #### Criação Dynamic Group
