@@ -77,7 +77,18 @@ Será necessário enviarmos o arquivo que fizemos upload para o diretório da no
 
 Se caso perguntar se você deseja sobrescrever um arquivo existente, pode confirmar.
 
-Agora que criamos o arquivo da nossa aplicação, vamos fazer o deploy dela, para isso voltamos ao <i>Cloud Shell Setup</i>, e vamos executar apenas o passo <b>9</b> e passo <b>10</b>
+Agora vamos acessar o diretório conforme solicitado no passo <b>9</b> e vamos editar o arquivo requirements.txt. Para isso, executamos o comando vi
+> vi requirements.txt
+  
+e vamos incluir as linhas:
+> oci
+> requests
+> pandas
+
+depois salvar e fechar o arquivo no vi.
+ 
+
+Agora que criamos/configuramos os arquivos da nossa aplicação, vamos fazer o deploy dela, para isso voltamos ao <i>Cloud Shell Setup</i>, e vamos executar apenas o passo <b>10</b>
 
 #### Invocação do Script
 
